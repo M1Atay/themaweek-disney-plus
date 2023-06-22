@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    /* width: 100%; */
+    background: #0c111b;
+    font-family: roboto, sans-serif;
+    color: white;
+}
+header {
+    grid-area: hd;
+    height: 70px;
+    /* padding: 10px; */
+   
+    background-color: #090b13;
+}
+.wrapper{
+    display: grid;
+   grid-template-columns: repeat(9,1fr);
+   grid-auto-rows: minmax(70px,auto);
+   grid-template-areas: 
+   "hd hd hd hd hd hd hd hd hd "
+   ". . . . . . . . . "
+   "mv mv mv mv mv mv mv mv mv"
+   "ss ss ss ss ss ss ss ss ss"
+  ;
+}
+.disney-img{
+    width: 80px;
+    height: 70px;
+    margin-left: 20px;
+}
+.searche{
+    height: 13px;
+}
+.box{
+    margin-left: 70px;
+}
+.box2{
+    color: white;
+    text-decoration: none;
+}
+.box2:hover{
+ color: gray;
+}
+.search{
+    margin-left: 450px;
+}
+.disney-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    /* margin-left: 30px;; */
+}
+.box3{
+    color: white;
+}
+.movies{
+    grid-area: mv;
+    margin-left: 30px;
+  
+
+  
+}
+.watchlist{
+    background-color: gray;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+
+    
+}
+.watchlist:hover{
+    background-color: lightslategray;
+}
+.play-button{
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.play-button:hover{
+    background-color: yellow;
+}
+.img-size{
+    width: 200px;
+    height: 150px;
+} 
+/* .space{
+    margin-left: 60px;
+} */
+/* .space2{
+    margin-left: 130px;
+} */
+.more{
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+.series{
+    margin-top: 60px;
+    grid-area: ss;
+    margin-left: 30px;
+}
+.listing{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+    gap:90px
+}
+.listing2{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+    gap:90px
+}
