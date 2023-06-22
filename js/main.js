@@ -2,7 +2,7 @@ console.log(`js loaded`)
 
 
 function moreMovies() {
-    window.location = "/movies.html"
+    window.location = "movies.html"
     }
     
     const buttonMovies = document.querySelector('.more-movies');
@@ -12,7 +12,7 @@ function moreMovies() {
 
 
 function moreSeries() {
-window.location = "/series.html"
+window.location = "series.html"
 }
 
 const buttonSeries = document.querySelector('.more-series');
@@ -25,7 +25,7 @@ buttonSeries.addEventListener('click', moreSeries);
 
     function login() {
         alert(`You have signed in!`)
-        window.location = "/home.html"
+        window.location = "home.html"
         }
         
         const buttonLogin = document.querySelector('.login-button');
